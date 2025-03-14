@@ -20,7 +20,6 @@ This project is a Python-based API client that retrieves an authentication token
 │── main.py              # Entry point for the application
 │── config.py            # Configuration file for settings
 │── utils.py             # Utility functions for API calls and encoding
-│── .env                 # Environment variables (excluded from Git)
 │── requirements.txt      # Dependencies list
 │── .gitignore           # Git ignore rules
 │── README.md            # Project documentation
@@ -28,19 +27,32 @@ This project is a Python-based API client that retrieves an authentication token
 
 ## Setup Instructions
 
-### 1. Install Dependencies
+### 1. Create a Virtual Environment
 
-Ensure you have Python installed, then install dependencies:
+Ensure you have Python installed, then create a virtual environment:
+
+```sh
+python -m venv venv
+```
+
+### 2. Activate the Virtual Environment
+
+- **On Windows:**
+  ```sh
+  venv\Scripts\activate
+  ```
+- **On macOS/Linux:**
+  ```sh
+  source venv/bin/activate
+  ```
+
+### 3. Install Dependencies
 
 ```sh
 pip install -r requirements.txt
 ```
 
-### 2. Set Up and Configure Environment Variables
-
-Create or set up a `.env` file in the root directory
-
-### 3. Run the Project
+### 4. Run the Project
 
 ```sh
 python main.py
